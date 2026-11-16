@@ -1,0 +1,14 @@
+[package]
+name = "todo"
+version = "0.1.0"
+edition = "2021"
+description = "A tiny command-line todo list - a beginner-friendly first Rust project"
+
+# No dependencies! Everything uses the Rust standard library,
+# so `cargo build` works offline and the code stays easy to read.
+[dependencies]
+
+[profile.release]
+# Keep the release binary small.
+strip = true
+lto = true
